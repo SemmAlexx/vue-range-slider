@@ -1128,6 +1128,7 @@
         }
 
         if (!this.flag) return false;
+        e.preventDefault() // NOTE: COMMENTED, BREAKS SELECTING THINGS ON PAGE
         if (e.targetTouches && e.targetTouches[0]) e = e.targetTouches[0];
 
         if (this.processFlag) {
